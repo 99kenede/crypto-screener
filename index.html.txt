@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto CCI Screener - BreakoutProp</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #131722; color: #d1d4dc; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: #fff; }
+        .meta { text-align: center; color: #787b86; margin-bottom: 20px; }
+        .section { margin-bottom: 30px; }
+        .section-title { font-size: 1.2em; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #2a2e39; }
+        .above { color: #089981; }
+        .below { color: #f23645; }
+        table { width: 100%; border-collapse: collapse; background-color: #1e222d; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #2a2e39; }
+        th { background-color: #2a2e39; color: #d1d4dc; font-weight: 600; }
+        tr:hover { background-color: #2a2e39; }
+        a { color: #2962ff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .loading { text-align: center; padding: 40px; color: #787b86; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Crypto CCI(100) Screener</h1>
+        <div class="meta" id="meta">Carregando dados...</div>
+        <div id="loading" class="loading">Buscando dados mais recentes...</div>
+
+        <div id="content" style="display: none;">
+            <div class="section">
+                <div class="section-title above">✅ Acima de 0 (<span id="count-above">0</span>)</div>
+                <table>
+                    <thead><tr><th>Ativo</th><th>Preço</th><th>CCI (1h)</th></tr></thead>
+                    <tbody id="tbody-above"></tbody>
+                </table>
+            </div>
+            <div class="section">
+                <div class="section-title below">⏭️ Abaixo de 0 (<span id="count-below">0</span>)</div>
+                <table>
+                    <thead><tr><th>Ativo</th><th>Preço</th><th>CCI (1h)</th></tr></thead>
+                    <tbody id="tbody-below"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        fetch('results.json?t=' + new Date().getTime())
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('meta').innerHTML = `Timeframe: <b>${data.timeframe}</b> | Última atualização: <b>${data.last_update}</b>`;
+                document.getElementById('count-above').innerText = data.total_above;
+                document.getElementById('count-below').innerText = data.total_below;
+
+                const tbodyAbove = document.getElementById('tbody-above');
+                data.above_zero.forEach(coin => {
+                    tbodyAbove.innerHTML += `<tr><td><a href="${coin.tv_link}" target="_blank">${coin.symbol}</a></td><td>$${coin.price.toFixed(coin.price < 1 ? 4 : 2)}</td><td class="above"><b>${coin.cci}</b></td></tr>`;
+                });
+
+                const tbodyBelow = document.getElementById('tbody-below');
+                data.below_zero.forEach(coin => {
+                    tbodyBelow.innerHTML += `<tr><td><a href="${coin.tv_link}" target="_blank">${coin.symbol}</a></td><td>$${coin.price.toFixed(coin.price < 1 ? 4 : 2)}</td><td class="below"><b>${coin.cci}</b></td></tr>`;
+                });
+            })
+            .catch(error => {
+                document.getElementById('loading').innerText = 'Erro ao carregar. O GitHub Actions ainda não rodou?';
+            });
+    </script>
+</body>
+</html>

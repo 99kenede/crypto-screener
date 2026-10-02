@@ -56,7 +56,7 @@ def calculate_cci(high, low, close, period):
 def main():
     print(f"🚀 Iniciando screener - Timeframe: {TIMEFRAME}, CCI({CCI_PERIOD}) > {CCI_THRESHOLD}")
     
-    exchange = ccxt.binancccxt.bybit()
+    exchange = exchange = ccxt.bybit()
     results = []
     
     for symbol in SYMBOLS:

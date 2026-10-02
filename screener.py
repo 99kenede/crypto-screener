@@ -56,9 +56,9 @@ def send_telegram_message(message):
         print(f"❌ Erro ao enviar Telegram: {e}")
 
 def get_tradingview_link(symbol, timeframe):
-    """Gera link do TradingView para a crypto (Usando OKX)"""
+    """Gera link do TradingView para a crypto (Usando OKX Perpetual)"""
     tv_symbol = symbol.replace('/', '')
-    return f'https://www.tradingview.com/chart/?symbol=OKX:{tv_symbol}&interval={timeframe}'
+    return f'https://www.tradingview.com/chart/?symbol=OKX:{tv_symbol}.P&interval={timeframe}'
 
 def calculate_cci(high, low, close, period):
     return ta.trend.cci(high, low, close, window=period)

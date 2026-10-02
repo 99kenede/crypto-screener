@@ -3,33 +3,39 @@ import pandas as pd
 import ta
 import requests
 import os
-import sys
+import json
+from datetime import datetime, timezone
 
 # Configurações
 TIMEFRAME = '1h'
 CCI_PERIOD = 100
 CCI_THRESHOLD = 0
 
-# Lista de cryptos (ajuste conforme necessário)
+# Lista oficial da BreakoutProp (71 cryptos únicas, extraídas do seu arquivo)
 SYMBOLS = [
-    'BTC/USDT', 'ETH/USDT', 'SOL/USDT', 'XRP/USDT',
-    'DOGE/USDT', 'ADA/USDT', 'AVAX/USDT', 'DOT/USDT',
-    'LINK/USDT', 'MATIC/USDT', 'LTC/USDT', 'BNB/USDT',
-    'ARB/USDT', 'OP/USDT', 'SUI/USDT', 'APT/USDT',
-    'NEAR/USDT', 'ATOM/USDT', 'UNI/USDT', 'FIL/USDT',
-    'ICP/USDT', 'ETC/USDT', 'XLM/USDT', 'TRX/USDT',
-    'ALGO/USDT', 'VET/USDT', 'FTM/USDT', 'SAND/USDT',
-    'MANA/USDT', 'AXS/USDT', 'AAVE/USDT', 'GRT/USDT',
+    '1000BONK/USDT', '1000FLOKI/USDT', '1000PEPE/USDT', '1000SHIB/USDT',
+    'AAVE/USDT', 'ADA/USDT', 'AIXBT/USDT', 'ALGO/USDT', 'APT/USDT',
+    'ARB/USDT', 'ASTER/USDT', 'ATOM/USDT', 'AVAX/USDT', 'BCH/USDT',
+    'BNB/USDT', 'BONK/USDT', 'BTC/USDT', 'CRV/USDT', 'DOGE/USDT',
+    'DOT/USDT', 'ENA/USDT', 'ETC/USDT', 'ETH/USDT', 'ETHFI/USDT',
+    'FARTCOIN/USDT', 'FIL/USDT', 'FLOKI/USDT', 'GRASS/USDT', 'HBAR/USDT',
+    'HYPE/USDT', 'ICP/USDT', 'INJ/USDT', 'JTO/USDT', 'JUP/USDT',
+    'KAITO/USDT', 'LDO/USDT', 'LINK/USDT', 'LIT/USDT', 'LTC/USDT',
+    'MON/USDT', 'MOODENG/USDT', 'NEAR/USDT', 'ONDO/USDT', 'OP/USDT',
+    'ORDI/USDT', 'PENDLE/USDT', 'PENGU/USDT', 'PEPE/USDT', 'PNUT/USDT',
+    'POL/USDT', 'POPCAT/USDT', 'PUMP/USDT', 'RENDER/USDT', 'S/USDT',
+    'SHIB/USDT', 'SOL/USDT', 'STX/USDT', 'SUI/USDT', 'TAO/USDT',
+    'TIA/USDT', 'TRUMP/USDT', 'TRX/USDT', 'UNI/USDT', 'VIRTUAL/USDT',
+    'WIF/USDT', 'WLD/USDT', 'XLM/USDT', 'XPL/USDT', 'XRP/USDT',
+    'ZEC/USDT', 'ZRO/USDT'
 ]
 
-# Telegram config (vem do GitHub Secrets)
+# Telegram config
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 def send_telegram_message(message):
-    """Envia mensagem para o Telegram"""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("⚠️ Telegram não configurado. Apenas logando no console.")
         print(message)
         return
     
@@ -49,15 +55,21 @@ def send_telegram_message(message):
     except Exception as e:
         print(f"❌ Erro ao enviar Telegram: {e}")
 
+def get_tradingview_link(symbol, timeframe):
+    """Gera link do TradingView para a crypto (Usando OKX)"""
+    tv_symbol = symbol.replace('/', '')
+    return f'https://www.tradingview.com/chart/?symbol=OKX:{tv_symbol}&interval={timeframe}'
+
 def calculate_cci(high, low, close, period):
-    """Calcula CCI usando ta-lib"""
     return ta.trend.cci(high, low, close, window=period)
 
 def main():
-    print(f"🚀 Iniciando screener - Timeframe: {TIMEFRAME}, CCI({CCI_PERIOD}) > {CCI_THRESHOLD}")
+    print(f"🚀 Iniciando screener - Timeframe: {TIMEFRAME}, CCI({CCI_PERIOD})")
     
+    # Usando OKX (que não bloqueia o GitHub Actions)
     exchange = ccxt.okx()
-    results = []
+    above_zero = []
+    below_zero = []
     
     for symbol in SYMBOLS:
         try:
@@ -70,37 +82,65 @@ def main():
             
             last_cci = df['cci'].iloc[-1]
             last_price = df['close'].iloc[-1]
+            tv_link = get_tradingview_link(symbol, TIMEFRAME)
+            
+            crypto_data = {
+                'symbol': symbol,
+                'price': last_price,
+                'cci': round(last_cci, 2),
+                'tv_link': tv_link
+            }
             
             if last_cci > CCI_THRESHOLD:
-                results.append({
-                    'symbol': symbol,
-                    'price': last_price,
-                    'cci': round(last_cci, 2)
-                })
+                above_zero.append(crypto_data)
                 print(f"✅ {symbol}: CCI={last_cci:.2f}, Preço=${last_price:.2f}")
             else:
-                print(f"⏭️ {symbol}: CCI={last_cci:.2f} (abaixo do threshold)")
+                below_zero.append(crypto_data)
                 
         except Exception as e:
             print(f"❌ Erro em {symbol}: {e}")
     
+    # Ordena por CCI (maior para menor)
+    above_zero.sort(key=lambda x: x['cci'], reverse=True)
+    below_zero.sort(key=lambda x: x['cci'], reverse=True)
+    
+    # Monta dados para o site (JSON)
+    output_data = {
+        'last_update': datetime.now(timezone.utc).strftime('%d/%m/%Y %H:%M UTC'),
+        'timeframe': TIMEFRAME,
+        'cci_period': CCI_PERIOD,
+        'above_zero': above_zero,
+        'below_zero': below_zero,
+        'total_above': len(above_zero),
+        'total_below': len(below_zero)
+    }
+    
+    # Salva JSON para o site
+    with open('results.json', 'w', encoding='utf-8') as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    print("\n💾 results.json salvo com sucesso!")
+    
+    # Debug: Verifica se o arquivo foi criado no servidor do GitHub
+    print(f"\n📁 Arquivos no diretório: {os.listdir('.')}")
+    print(f"✅ results.json existe? {os.path.exists('results.json')}")
+    
     # Monta mensagem para Telegram
-    if results:
-        message = "🚀 <b>CRYPTOS COM CCI(100) > 0</b>\n\n"
+    if above_zero:
+        message = f"🚀 <b>CRYPTOS CCI({CCI_PERIOD}) > 0</b>\n"
         message += f"📊 Timeframe: {TIMEFRAME}\n"
-        message += f"📅 {pd.Timestamp.now().strftime('%d/%m/%Y %H:%M UTC')}\n\n"
-        
-        for r in sorted(results, key=lambda x: x['cci'], reverse=True):
-            message += f"<b>{r['symbol']}</b>\n"
-            message += f"💰 Preço: ${r['price']:.2f}\n"
-            message += f"📈 CCI: {r['cci']}\n\n"
+        message += f"📅 {output_data['last_update']}\n\n"
+        message += f"✅ <b>{len(above_zero)} acima de 0</b>\n"
+        message += f"⏭️ <b>{len(below_zero)} abaixo de 0</b>\n\n"
+        message += "<b>TOP 5 ACIMA:</b>\n"
+        for r in above_zero[:5]:
+            message += f"🔗 <a href='{r['tv_link']}'>{r['symbol']}</a> | CCI: {r['cci']} | ${r['price']:.2f}\n"
         
         send_telegram_message(message)
-        print(f"\n✅ {len(results)} cryptos encontradas com CCI > {CCI_THRESHOLD}")
     else:
-        message = "⚠️ Nenhuma cripto com CCI(100) > 0 no momento."
+        message = f"⚠️ Nenhuma cripto com CCI({CCI_PERIOD}) > 0 no momento."
         send_telegram_message(message)
-        print("\n⚠️ Nenhuma cripto encontrada")
+    
+    print(f"\n✅ {len(above_zero)} acima de 0 | {len(below_zero)} abaixo de 0")
 
 if __name__ == '__main__':
     main()

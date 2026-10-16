@@ -1,401 +1,401 @@
 {
-  "last_update": "15/10/2026 22:01 UTC",
+  "last_update": "16/10/2026 01:03 UTC",
   "timeframe": "1h",
   "cci_period": 100,
   "above_zero": [
     {
       "symbol": "INJ/USDT",
-      "price": 8.521,
-      "cci": 180.48,
+      "price": 8.593,
+      "cci": 178.06,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:INJUSDT.P&interval=1h"
     },
     {
-      "symbol": "ARB/USDT",
-      "price": 0.19489,
-      "cci": 91.94,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ARBUSDT.P&interval=1h"
-    },
-    {
       "symbol": "TRX/USDT",
-      "price": 0.33265,
-      "cci": 80.28,
+      "price": 0.33369,
+      "cci": 123.25,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:TRXUSDT.P&interval=1h"
     },
     {
-      "symbol": "XPL/USDT",
-      "price": 0.08567,
-      "cci": 72.54,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:XPLUSDT.P&interval=1h"
+      "symbol": "ARB/USDT",
+      "price": 0.19532,
+      "cci": 102.44,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ARBUSDT.P&interval=1h"
     },
     {
       "symbol": "TIA/USDT",
-      "price": 0.5869,
-      "cci": 60.42,
+      "price": 0.5944,
+      "cci": 76.81,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:TIAUSDT.P&interval=1h"
     },
     {
-      "symbol": "FIL/USDT",
-      "price": 1.1886,
-      "cci": 58.55,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:FILUSDT.P&interval=1h"
+      "symbol": "STX/USDT",
+      "price": 0.4309,
+      "cci": 76.4,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:STXUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "XPL/USDT",
+      "price": 0.08553,
+      "cci": 75.69,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:XPLUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ZRO/USDT",
+      "price": 2.192,
+      "cci": 74.81,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ZROUSDT.P&interval=1h"
     },
     {
       "symbol": "BCH/USDT",
-      "price": 279.4,
-      "cci": 57.21,
+      "price": 278.9,
+      "cci": 58.04,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BCHUSDT.P&interval=1h"
     },
     {
       "symbol": "ASTER/USDT",
-      "price": 0.7061,
-      "cci": 56.31,
+      "price": 0.7049,
+      "cci": 52.64,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ASTERUSDT.P&interval=1h"
     },
     {
+      "symbol": "TAO/USDT",
+      "price": 283.6,
+      "cci": 48.2,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:TAOUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "NEAR/USDT",
+      "price": 5.355,
+      "cci": 42.69,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:NEARUSDT.P&interval=1h"
+    },
+    {
       "symbol": "UNI/USDT",
-      "price": 7.521,
-      "cci": 48.07,
+      "price": 7.484,
+      "cci": 41.57,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:UNIUSDT.P&interval=1h"
     },
     {
       "symbol": "CRV/USDT",
-      "price": 0.3576,
-      "cci": 47.9,
+      "price": 0.3537,
+      "cci": 35.5,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:CRVUSDT.P&interval=1h"
     },
     {
-      "symbol": "STX/USDT",
-      "price": 0.4262,
-      "cci": 47.68,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:STXUSDT.P&interval=1h"
-    },
-    {
       "symbol": "ZEC/USDT",
-      "price": 1244.82,
-      "cci": 41.62,
+      "price": 1234.21,
+      "cci": 33.98,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ZECUSDT.P&interval=1h"
     },
     {
-      "symbol": "NEAR/USDT",
-      "price": 5.363,
-      "cci": 37.83,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:NEARUSDT.P&interval=1h"
+      "symbol": "APT/USDT",
+      "price": 0.8415,
+      "cci": 33.76,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:APTUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "FIL/USDT",
+      "price": 1.1526,
+      "cci": 18.87,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:FILUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ONDO/USDT",
+      "price": 0.4718,
+      "cci": 4.95,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ONDOUSDT.P&interval=1h"
     },
     {
       "symbol": "PEPE/USDT",
-      "price": 4.148e-06,
-      "cci": 25.71,
+      "price": 4.107e-06,
+      "cci": 0.68,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PEPEUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "ZRO/USDT",
-      "price": 2.0961,
-      "cci": 17.8,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ZROUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "TRUMP/USDT",
-      "price": 1.891,
-      "cci": 2.17,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:TRUMPUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "APT/USDT",
-      "price": 0.8323,
-      "cci": 1.04,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:APTUSDT.P&interval=1h"
     }
   ],
   "below_zero": [
     {
-      "symbol": "TAO/USDT",
-      "price": 278.3,
-      "cci": -1.65,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:TAOUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "HYPE/USDT",
-      "price": 82.485,
-      "cci": -1.66,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:HYPEUSDT.P&interval=1h"
-    },
-    {
       "symbol": "ETHFI/USDT",
-      "price": 0.6732,
-      "cci": -7.81,
+      "price": 0.6752,
+      "cci": -0.19,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ETHFIUSDT.P&interval=1h"
     },
     {
-      "symbol": "ONDO/USDT",
-      "price": 0.4689,
-      "cci": -11.3,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ONDOUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "PENDLE/USDT",
-      "price": 2.092,
-      "cci": -14.38,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PENDLEUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "AAVE/USDT",
-      "price": 158.46,
-      "cci": -17.79,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:AAVEUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "OP/USDT",
-      "price": 0.13945,
-      "cci": -18.81,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:OPUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "BTC/USDT",
-      "price": 82534.8,
-      "cci": -20.65,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BTCUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "ETH/USDT",
-      "price": 2464.96,
-      "cci": -22.59,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ETHUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "S/USDT",
-      "price": 0.05641,
-      "cci": -24.92,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "RENDER/USDT",
-      "price": 1.973,
-      "cci": -26.07,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:RENDERUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "SOL/USDT",
-      "price": 106.2,
-      "cci": -26.45,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SOLUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "WLD/USDT",
-      "price": 0.5038,
-      "cci": -28.21,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:WLDUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "ETC/USDT",
-      "price": 8.048,
-      "cci": -29.26,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ETCUSDT.P&interval=1h"
+      "symbol": "HYPE/USDT",
+      "price": 82.246,
+      "cci": -4.67,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:HYPEUSDT.P&interval=1h"
     },
     {
       "symbol": "LTC/USDT",
-      "price": 60.76,
-      "cci": -29.94,
+      "price": 61.28,
+      "cci": -5.19,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:LTCUSDT.P&interval=1h"
     },
     {
-      "symbol": "ENA/USDT",
-      "price": 0.20541,
-      "cci": -31.27,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ENAUSDT.P&interval=1h"
+      "symbol": "TRUMP/USDT",
+      "price": 1.886,
+      "cci": -6.89,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:TRUMPUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "WLD/USDT",
+      "price": 0.508,
+      "cci": -7.27,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:WLDUSDT.P&interval=1h"
     },
     {
       "symbol": "SUI/USDT",
-      "price": 1.0373,
-      "cci": -32.56,
+      "price": 1.0467,
+      "cci": -8.92,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SUIUSDT.P&interval=1h"
     },
     {
-      "symbol": "SHIB/USDT",
-      "price": 5.143e-06,
-      "cci": -33.45,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SHIBUSDT.P&interval=1h"
-    },
-    {
       "symbol": "ALGO/USDT",
-      "price": 0.11713,
-      "cci": -36.99,
+      "price": 0.11854,
+      "cci": -14.5,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ALGOUSDT.P&interval=1h"
     },
     {
-      "symbol": "ICP/USDT",
-      "price": 3.081,
-      "cci": -37.24,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ICPUSDT.P&interval=1h"
+      "symbol": "AAVE/USDT",
+      "price": 158.34,
+      "cci": -15.34,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:AAVEUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "S/USDT",
+      "price": 0.05648,
+      "cci": -16.15,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ENA/USDT",
+      "price": 0.20672,
+      "cci": -16.53,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ENAUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "DOT/USDT",
+      "price": 1.1542,
+      "cci": -23.34,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:DOTUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "OP/USDT",
+      "price": 0.13859,
+      "cci": -25.7,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:OPUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "HBAR/USDT",
+      "price": 0.0858,
+      "cci": -28.62,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:HBARUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "PENDLE/USDT",
+      "price": 2.075,
+      "cci": -29.18,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PENDLEUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "PENGU/USDT",
+      "price": 0.007681,
+      "cci": -30.61,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PENGUUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "BTC/USDT",
+      "price": 82312.1,
+      "cci": -31.14,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BTCUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "SHIB/USDT",
+      "price": 5.134e-06,
+      "cci": -31.82,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SHIBUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "VIRTUAL/USDT",
+      "price": 0.6838,
+      "cci": -35.04,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:VIRTUALUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ETC/USDT",
+      "price": 8.021,
+      "cci": -36.66,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ETCUSDT.P&interval=1h"
     },
     {
       "symbol": "KAITO/USDT",
       "price": 0.2997,
-      "cci": -40.89,
+      "cci": -36.89,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:KAITOUSDT.P&interval=1h"
     },
     {
+      "symbol": "RENDER/USDT",
+      "price": 1.959,
+      "cci": -37.17,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:RENDERUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "SOL/USDT",
+      "price": 105.53,
+      "cci": -40.64,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:SOLUSDT.P&interval=1h"
+    },
+    {
       "symbol": "AIXBT/USDT",
-      "price": 0.0197,
-      "cci": -42.65,
+      "price": 0.01964,
+      "cci": -42.03,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:AIXBTUSDT.P&interval=1h"
     },
     {
-      "symbol": "VIRTUAL/USDT",
-      "price": 0.6825,
-      "cci": -43.21,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:VIRTUALUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "ADA/USDT",
-      "price": 0.2313,
-      "cci": -44.8,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ADAUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "DOT/USDT",
-      "price": 1.1432,
-      "cci": -45.32,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:DOTUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "LINK/USDT",
-      "price": 12.573,
-      "cci": -46.38,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:LINKUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "PENGU/USDT",
-      "price": 0.00765,
-      "cci": -46.67,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PENGUUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "XRP/USDT",
-      "price": 1.343,
-      "cci": -46.85,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:XRPUSDT.P&interval=1h"
-    },
-    {
       "symbol": "AVAX/USDT",
-      "price": 10.029,
-      "cci": -49.22,
+      "price": 10.041,
+      "cci": -42.12,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:AVAXUSDT.P&interval=1h"
     },
     {
+      "symbol": "ADA/USDT",
+      "price": 0.2308,
+      "cci": -43.87,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ADAUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ICP/USDT",
+      "price": 3.058,
+      "cci": -45.34,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ICPUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ETH/USDT",
+      "price": 2441.51,
+      "cci": -48.22,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ETHUSDT.P&interval=1h"
+    },
+    {
       "symbol": "LDO/USDT",
-      "price": 0.4053,
-      "cci": -49.4,
+      "price": 0.4034,
+      "cci": -54.26,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:LDOUSDT.P&interval=1h"
     },
     {
-      "symbol": "WIF/USDT",
-      "price": 0.2023,
-      "cci": -50.62,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:WIFUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "HBAR/USDT",
-      "price": 0.08493,
-      "cci": -52.73,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:HBARUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "BNB/USDT",
-      "price": 732.0,
-      "cci": -56.2,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BNBUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "MOODENG/USDT",
-      "price": 0.03941,
-      "cci": -60.66,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:MOODENGUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "PNUT/USDT",
-      "price": 0.04595,
-      "cci": -64.38,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PNUTUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "ORDI/USDT",
-      "price": 3.969,
-      "cci": -66.31,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ORDIUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "JUP/USDT",
-      "price": 0.3152,
-      "cci": -69.32,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:JUPUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "ATOM/USDT",
-      "price": 1.746,
-      "cci": -70.49,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ATOMUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "POL/USDT",
-      "price": 0.09612,
-      "cci": -71.1,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:POLUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "XLM/USDT",
-      "price": 0.18422,
-      "cci": -73.3,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:XLMUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "DOGE/USDT",
-      "price": 0.08163,
-      "cci": -73.77,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:DOGEUSDT.P&interval=1h"
-    },
-    {
-      "symbol": "BONK/USDT",
-      "price": 3.088e-06,
-      "cci": -74.66,
-      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BONKUSDT.P&interval=1h"
-    },
-    {
       "symbol": "GRASS/USDT",
-      "price": 0.658,
-      "cci": -76.3,
+      "price": 0.6718,
+      "cci": -54.29,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:GRASSUSDT.P&interval=1h"
     },
     {
+      "symbol": "LINK/USDT",
+      "price": 12.49,
+      "cci": -55.7,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:LINKUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "WIF/USDT",
+      "price": 0.2013,
+      "cci": -55.8,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:WIFUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "XRP/USDT",
+      "price": 1.3369,
+      "cci": -55.91,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:XRPUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ATOM/USDT",
+      "price": 1.747,
+      "cci": -64.11,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ATOMUSDT.P&interval=1h"
+    },
+    {
       "symbol": "FLOKI/USDT",
-      "price": 2.452e-05,
-      "cci": -78.85,
+      "price": 2.465e-05,
+      "cci": -64.65,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:FLOKIUSDT.P&interval=1h"
     },
     {
+      "symbol": "BNB/USDT",
+      "price": 729.9,
+      "cci": -64.99,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BNBUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "ORDI/USDT",
+      "price": 3.958,
+      "cci": -66.24,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:ORDIUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "PNUT/USDT",
+      "price": 0.04578,
+      "cci": -66.39,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PNUTUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "POL/USDT",
+      "price": 0.09613,
+      "cci": -66.65,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:POLUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "MOODENG/USDT",
+      "price": 0.03915,
+      "cci": -69.45,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:MOODENGUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "BONK/USDT",
+      "price": 3.08e-06,
+      "cci": -74.56,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:BONKUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "DOGE/USDT",
+      "price": 0.08134,
+      "cci": -76.28,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:DOGEUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "XLM/USDT",
+      "price": 0.18337,
+      "cci": -76.77,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:XLMUSDT.P&interval=1h"
+    },
+    {
+      "symbol": "JUP/USDT",
+      "price": 0.3116,
+      "cci": -79.69,
+      "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:JUPUSDT.P&interval=1h"
+    },
+    {
       "symbol": "JTO/USDT",
-      "price": 0.4788,
-      "cci": -88.83,
+      "price": 0.4782,
+      "cci": -82.8,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:JTOUSDT.P&interval=1h"
     },
     {
       "symbol": "PUMP/USDT",
-      "price": 0.004583,
-      "cci": -88.91,
+      "price": 0.004558,
+      "cci": -86.93,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:PUMPUSDT.P&interval=1h"
     },
     {
       "symbol": "LIT/USDT",
-      "price": 3.08,
-      "cci": -89.27,
+      "price": 3.0608,
+      "cci": -89.85,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:LITUSDT.P&interval=1h"
     },
     {
       "symbol": "MON/USDT",
-      "price": 0.0232,
-      "cci": -101.93,
+      "price": 0.02311,
+      "cci": -104.11,
       "tv_link": "https://www.tradingview.com/chart/?symbol=OKX:MONUSDT.P&interval=1h"
     }
   ],
-  "total_above": 17,
-  "total_below": 48
+  "total_above": 18,
+  "total_below": 47
 }
